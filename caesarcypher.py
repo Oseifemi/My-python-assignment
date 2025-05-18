@@ -15,7 +15,7 @@ def caesar_cipher(text, shift, mode='encrypt'):
             result += char  # Leave spaces and punctuation unchanged
     return result
 
-# Main program
+
 print("=== Caesar Cipher ===")
 text = input("Enter your message: ")
 while True:
