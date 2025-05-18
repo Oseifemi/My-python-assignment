@@ -53,7 +53,6 @@ else:
     print(summary)
     report_lines.append(summary)
 
-    # Save to file
     with open("gpa_report.txt", "w") as f:
         f.write("GPA Calculation Report\n\n")
         for line in report_lines:
