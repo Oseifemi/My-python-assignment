@@ -8,11 +8,10 @@ def caesar_cipher(text, shift, mode='encrypt'):
     for char in text:
         if char.isalpha():
             base = ord('A') if char.isupper() else ord('a')
-            # Shift within alphabet range
             shifted = (ord(char) - base + shift) % 26 + base
             result += chr(shifted)
         else:
-            result += char  # Leave spaces and punctuation unchanged
+            result += char 
     return result
 
 
